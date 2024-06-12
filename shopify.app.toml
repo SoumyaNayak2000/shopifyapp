@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "091a94f2e0d068d68034752d5e758737"
+name = "ingrediant-app"
+handle = "ingrediant-app"
+application_url = "https://wisdom-dist-quotations-builds.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "soumya8077.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_products"
+
+[auth]
+redirect_urls = [
+  "https://wisdom-dist-quotations-builds.trycloudflare.com/auth/callback",
+  "https://wisdom-dist-quotations-builds.trycloudflare.com/auth/shopify/callback",
+  "https://wisdom-dist-quotations-builds.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
